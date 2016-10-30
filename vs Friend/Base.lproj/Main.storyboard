@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="OCRAStd.otf">
+            <string>OCRAStd</string>
+            <string>OCRAStd</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="vs_Friend" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BbF-mC-0ME">
+                                <rect key="frame" x="106" y="323" width="108" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="すたーと"/>
+                                <connections>
+                                    <segue destination="9q6-sf-nlH" kind="modal" id="yyv-yM-QRj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HI SCORE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3W5-Ke-YUv">
+                                <rect key="frame" x="89" y="494" width="142" height="21"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Kq-Ac-Kg7">
+                                <rect key="frame" x="123" y="527" width="75" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="title.png" translatesAutoresizingMaskIntoConstraints="NO" id="NSX-9f-5Rr">
+                                <rect key="frame" x="34" y="45" width="240" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="251-cs-B99">
+                                <rect key="frame" x="106" y="379" width="108" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="おぷしょん"/>
+                                <connections>
+                                    <segue destination="pHm-Gj-5oU" kind="modal" id="U72-JJ-dDY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="hiscore" destination="1Kq-Ac-Kg7" id="hVf-pf-sOL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="287"/>
+        </scene>
+        <!--Option View Controller-->
+        <scene sceneID="mb7-cu-3Ef">
+            <objects>
+                <viewController id="pHm-Gj-5oU" customClass="OptionViewController" customModule="vs_Friend" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1oG-OY-aZy"/>
+                        <viewControllerLayoutGuide type="bottom" id="O3i-2a-5ti"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ruu-i3-chX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgh-u8-M1d">
+                                <rect key="frame" x="123" y="269" width="75" height="30"/>
+                                <state key="normal" title="練習モード"/>
+                                <connections>
+                                    <segue destination="2jL-BI-aCi" kind="modal" id="zkg-g5-gMr"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yCS-wj-YPb">
+                                <rect key="frame" x="183" y="359" width="51" height="31"/>
+                                <color key="onTintColor" red="0.74571673927613946" green="0.068676410228772911" blue="0.14935997874575482" alpha="1" colorSpace="calibratedRGB"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="proモード" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egn-Vc-xcq">
+                                <rect key="frame" x="69" y="364" width="77" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0aC-rs-Ndd">
+                                <rect key="frame" x="9" y="0.0" width="46" height="56"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="2.2250738585072014e-308"/>
+                                <state key="normal" title="back"/>
+                                <connections>
+                                    <action selector="back" destination="pHm-Gj-5oU" eventType="touchUpInside" id="lZr-V1-hat"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="myswicth" destination="yCS-wj-YPb" id="Urt-fK-kwL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eom-XM-zaW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="603" y="320"/>
+        </scene>
+        <!--Progame View Controller-->
+        <scene sceneID="6QP-uu-Bcm">
+            <objects>
+                <viewController id="h9W-xn-Xku" customClass="ProgameViewController" customModule="vs_Friend" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="goP-hZ-uhy"/>
+                        <viewControllerLayoutGuide type="bottom" id="l3L-jA-fGz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4wT-Ze-zVv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="coL-s5-kJm">
+                                <rect key="frame" x="0.0" y="0.0" width="108" height="216"/>
+                                <state key="normal" backgroundImage="ボタン用.png"/>
+                                <connections>
+                                    <action selector="puch:" destination="h9W-xn-Xku" eventType="touchUpInside" id="Uvr-OD-Zc2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XTN-58-8Rh">
+                                <rect key="frame" x="107" y="-1" width="107" height="217"/>
+                                <state key="normal" backgroundImage="ボタン用.png"/>
+                                <connections>
+                                    <action selector="puch:" destination="h9W-xn-Xku" eventType="touchUpInside" id="8FQ-DW-xzt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bcf-Zp-6iw">
+                                <rect key="frame" x="0.0" y="214" width="108" height="177"/>
+                                <state key="normal" backgroundImage="ボタン用.png"/>
+                                <connections>
+                                    <action selector="puch:" destination="h9W-xn-Xku" eventType="touchUpInside" id="gpw-F6-yqg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVv-SA-F8m">
+                                <rect key="frame" x="107" y="214" width="107" height="177"/>
+                                <state key="normal" backgroundImage="ボタン用.png"/>
+                                <connections>
+                                    <action selector="puch:" destination="h9W-xn-Xku" eventType="touchUpInside" id="PLg-Z8-S86"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thM-h4-0Pd">
+                                <rect key="frame" x="214" y="214" width="106" height="177"/>
+                                <state key="normal" backgroundImage="ボタン用.png"/>
+                                <connections>
+                                    <action selector="puch:" destination="h9W-xn-Xku" eventType="touchUpInside" id="m4g-zY-hF4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ni-7g-lCN">
+                                <rect key="frame" x="0.0" y="389" width="108" height="179"/>
+                                <state key="normal" backgroundImage="ボタン用.png"/>
+                                <connections>
+                                    <action selector="puch:" destination="h9W-xn-Xku" eventType="touchUpInside" id="eqC-Dp-Q53"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kv5-Kq-Y5E">
+                                <rect key="frame" x="107" y="389" width="107" height="179"/>
+                                <state key="normal" backgroundImage="ボタン用.png"/>
+                                <connections>
+                                    <action selector="puch:" destination="h9W-xn-Xku" eventType="touchUpInside" id="zp4-Kd-QWI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NG8-e6-V7P">
+                                <rect key="frame" x="214" y="389" width="106" height="179"/>
+                                <state key="normal" backgroundImage="ボタン用.png"/>
+                                <connections>
+                                    <action selector="puch:" destination="h9W-xn-Xku" eventType="touchUpInside" id="QDI-ag-MNn"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHl-le-ani">
+                                <rect key="frame" x="64" y="217" width="192" height="174"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="108"/>
+                                <color key="textColor" red="0.0" green="1" blue="1" alpha="0.62" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="COMBO.png" translatesAutoresizingMaskIntoConstraints="NO" id="nAK-GN-t7d">
+                                <rect key="frame" x="101" y="362" width="119" height="54"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Gw-sm-l5i">
+                                <rect key="frame" x="107" y="7" width="107" height="91"/>
+                                <fontDescription key="fontDescription" name="OCRAStd" family="OCR A Std" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="weU-Qm-yAg">
+                                <rect key="frame" x="214" y="-1" width="106" height="217"/>
+                                <state key="normal" backgroundImage="ボタン用.png"/>
+                                <connections>
+                                    <action selector="puch:" destination="h9W-xn-Xku" eventType="touchUpInside" id="LId-2d-ZWZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="button_pressed_output" destination="VHl-le-ani" id="Cwg-dF-Rje"/>
+                        <outlet property="combo" destination="nAK-GN-t7d" id="atO-e0-HLY"/>
+                        <outlet property="label" destination="2Gw-sm-l5i" id="teo-8V-1LW"/>
+                        <outletCollection property="button" destination="coL-s5-kJm" collectionClass="NSMutableArray" id="7Ny-xr-xKR"/>
+                        <outletCollection property="button" destination="XTN-58-8Rh" collectionClass="NSMutableArray" id="SsD-NR-f08"/>
+                        <outletCollection property="button" destination="weU-Qm-yAg" collectionClass="NSMutableArray" id="tLf-KO-aBF"/>
+                        <outletCollection property="button" destination="Bcf-Zp-6iw" collectionClass="NSMutableArray" id="1W7-1M-NhY"/>
+                        <outletCollection property="button" destination="EVv-SA-F8m" collectionClass="NSMutableArray" id="SGT-zv-PxN"/>
+                        <outletCollection property="button" destination="thM-h4-0Pd" collectionClass="NSMutableArray" id="ra4-7V-MOd"/>
+                        <outletCollection property="button" destination="7ni-7g-lCN" collectionClass="NSMutableArray" id="GgN-zy-CKj"/>
+                        <outletCollection property="button" destination="kv5-Kq-Y5E" collectionClass="NSMutableArray" id="I6J-Y9-hot"/>
+                        <outletCollection property="button" destination="NG8-e6-V7P" collectionClass="NSMutableArray" id="Xmh-UF-mfQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tVU-dR-UhM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1392" y="350"/>
+        </scene>
+        <!--Next View Controller-->
+        <scene sceneID="u2t-yn-Pom">
+            <objects>
+                <viewController id="9q6-sf-nlH" customClass="NextViewController" customModule="vs_Friend" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cs3-SD-iEt"/>
+                        <viewControllerLayoutGuide type="bottom" id="9AU-NT-TjO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Y7-9I-q96">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="何人ですか？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bK7-Ko-zTf">
+                                <rect key="frame" x="109" y="84" width="102" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfE-lX-T9V">
+                                <rect key="frame" x="134" y="293" width="51" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="３人"/>
+                                <connections>
+                                    <action selector="buttonPushed:" destination="9q6-sf-nlH" eventType="touchUpInside" id="23O-8E-o8h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPd-cT-Ib4">
+                                <rect key="frame" x="134" y="352" width="52" height="52"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="４人"/>
+                                <connections>
+                                    <action selector="buttonPushed:" destination="9q6-sf-nlH" eventType="touchUpInside" id="h4f-dT-sYa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ao-ky-eiM">
+                                <rect key="frame" x="134" y="232" width="52" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="２人"/>
+                                <connections>
+                                    <action selector="buttonPushed:" destination="9q6-sf-nlH" eventType="touchUpInside" id="nh6-Ln-fSK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="eaq-vL-buO" kind="modal" identifier="next" id="7CF-x3-I8o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rUX-50-rpw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="597" y="-309"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="9rp-vJ-oLj">
+            <objects>
+                <viewController id="eaq-vL-buO" customClass="ResultViewController" customModule="vs_Friend" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NfJ-i8-gbz"/>
+                        <viewControllerLayoutGuide type="bottom" id="STe-gh-KE0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NwU-EK-561">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="一人目" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bx7-vH-wpZ">
+                                <rect key="frame" x="50" y="98" width="51" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="二人目" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qfc-Ij-T4g">
+                                <rect key="frame" x="50" y="151" width="51" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="四人目" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqE-QZ-4pA">
+                                <rect key="frame" x="50" y="258" width="51" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1l-zD-ler">
+                                <rect key="frame" x="184" y="151" width="59" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agI-rm-EG2">
+                                <rect key="frame" x="184" y="203" width="59" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uM0-va-VxN">
+                                <rect key="frame" x="184" y="258" width="59" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vRx-o0-5uh">
+                                <rect key="frame" x="184" y="98" width="59" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="三人目" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AAQ-rr-jar">
+                                <rect key="frame" x="50" y="203" width="51" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rc7-Xx-8uz">
+                                <rect key="frame" x="6" y="20" width="133" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="ゲームを終わる"/>
+                                <connections>
+                                    <action selector="end_game" destination="eaq-vL-buO" eventType="touchUpInside" id="FXo-oj-Jes"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9D-1h-aLG">
+                                <rect key="frame" x="117" y="421" width="87" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="次へ進む"/>
+                                <connections>
+                                    <action selector="next_game" destination="eaq-vL-buO" eventType="touchUpInside" id="eEx-2M-6LQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="Player_3" destination="AAQ-rr-jar" id="fa0-zc-yZ4"/>
+                        <outlet property="Player_4" destination="iqE-QZ-4pA" id="KMP-YS-Jzx"/>
+                        <outlet property="Player_score_1" destination="vRx-o0-5uh" id="HaY-Sx-VXC"/>
+                        <outlet property="Player_score_2" destination="z1l-zD-ler" id="g9f-aa-YKq"/>
+                        <outlet property="Player_score_3" destination="agI-rm-EG2" id="8P9-4O-Qpg"/>
+                        <outlet property="Player_score_4" destination="uM0-va-VxN" id="Dug-OG-AB9"/>
+                        <outlet property="next" destination="M9D-1h-aLG" id="MYZ-Wg-RUW"/>
+                        <segue destination="h9W-xn-Xku" kind="modal" identifier="prosegue" id="X80-zl-y6v"/>
+                        <segue destination="2jL-BI-aCi" kind="modal" identifier="gamesegue" id="UwK-YZ-jbN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PdJ-Op-8FK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="988" y="-309"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="aq7-YB-MWt">
+            <objects>
+                <viewController id="2jL-BI-aCi" customClass="gameViewController" customModule="vs_Friend" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tc9-fS-BAW"/>
+                        <viewControllerLayoutGuide type="bottom" id="17h-el-rfh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="j0L-zR-ebL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkL-HV-E7X">
+                                <rect key="frame" x="0.0" y="0.0" width="159" height="285"/>
+                                <state key="normal" backgroundImage="ボタン用.png"/>
+                                <connections>
+                                    <action selector="puch:" destination="2jL-BI-aCi" eventType="touchUpInside" id="hr1-33-ADO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFh-BW-XN4">
+                                <rect key="frame" x="159" y="284" width="161" height="284"/>
+                                <state key="normal" backgroundImage="ボタン用.png"/>
+                                <connections>
+                                    <action selector="puch:" destination="2jL-BI-aCi" eventType="touchUpInside" id="Flc-Kb-lM3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4K-ke-Zx8">
+                                <rect key="frame" x="159" y="0.0" width="161" height="285"/>
+                                <state key="normal" backgroundImage="ボタン用.png"/>
+                                <connections>
+                                    <action selector="puch:" destination="2jL-BI-aCi" eventType="touchUpInside" id="z4a-Mx-Ioe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxx-PI-7J1">
+                                <rect key="frame" x="0.0" y="284" width="159" height="284"/>
+                                <state key="normal" backgroundImage="ボタン用.png"/>
+                                <connections>
+                                    <action selector="puch:" destination="2jL-BI-aCi" eventType="touchUpInside" id="Irm-uN-0TP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSD-bZ-NnF">
+                                <rect key="frame" x="64" y="199" width="192" height="174"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="108"/>
+                                <color key="textColor" red="0.0" green="1" blue="1" alpha="0.62" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="COMBO.png" translatesAutoresizingMaskIntoConstraints="NO" id="bwg-hL-6QD">
+                                <rect key="frame" x="101" y="331" width="119" height="54"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKc-Pd-j38">
+                                <rect key="frame" x="107" y="-10" width="107" height="91"/>
+                                <fontDescription key="fontDescription" name="OCRAStd" family="OCR A Std" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="button_pressed_output" destination="GSD-bZ-NnF" id="Sgp-ae-BN1"/>
+                        <outlet property="combo" destination="bwg-hL-6QD" id="OWZ-ne-cNT"/>
+                        <outlet property="label" destination="eKc-Pd-j38" id="Zeq-6g-Xow"/>
+                        <outletCollection property="button" destination="lkL-HV-E7X" collectionClass="NSMutableArray" id="lX1-oZ-SA7"/>
+                        <outletCollection property="button" destination="c4K-ke-Zx8" collectionClass="NSMutableArray" id="Sd8-94-lXH"/>
+                        <outletCollection property="button" destination="wxx-PI-7J1" collectionClass="NSMutableArray" id="IBy-XR-tin"/>
+                        <outletCollection property="button" destination="kFh-BW-XN4" collectionClass="NSMutableArray" id="hvw-Kc-5Db"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="321-ex-vic" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1392" y="-286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="COMBO.png" width="150" height="55"/>
+        <image name="title.png" width="198" height="124"/>
+        <image name="ボタン用.png" width="150" height="150"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="UwK-YZ-jbN"/>
+    </inferredMetricsTieBreakers>
+</document>
